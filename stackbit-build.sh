@@ -23,11 +23,14 @@ for version in ${hugo_versions[@]}; do
     tar -xf $file_name -C $target_dir
     rm $file_name
     echo "finished downloading hugo version ${version}"
-    cd /workspace
+    cd ../../
     ls
 done
 
 hugo version
-hugo
+hugo-bin/v0.80.0/hugo version
+
+hugo-bin/v0.80.0/hugo
+#hugo
 
 echo "stackbit-build.sh: finished build"
