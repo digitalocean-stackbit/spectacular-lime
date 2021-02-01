@@ -27,6 +27,7 @@ for version in ${hugo_versions[@]}; do
     ls
 done
 
+hugo version
 hugo
 
 echo "stackbit-build.sh: finished build"
