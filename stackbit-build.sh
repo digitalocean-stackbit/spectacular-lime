@@ -19,11 +19,11 @@ for version in ${hugo_versions[@]}; do
     echo "downloading hugo version ${version} from ${version_url} into hugo-bin/${target_dir}"
 #    curl -OL $version_url
     wget $version_url --quiet
-    mkdir -p $target_dir
+    mkdir -p ./$target_dir
     tar -xf $file_name -C $target_dir
     rm $file_name
     echo "finished downloading hugo version ${version}"
-    cd ../../
+    cd ../
     ls
 done
 
