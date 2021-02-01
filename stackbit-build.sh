@@ -7,7 +7,6 @@ set -v
 echo "stackbit-build.sh: start build"
 hugo_versions=(
   "0.80.0"
-  "0.48"
 )
 
 mkdir -p hugo-bin
