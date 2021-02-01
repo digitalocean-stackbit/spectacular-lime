@@ -24,6 +24,8 @@ for version in ${hugo_versions[@]}; do
     tar -xf $file_name -C $target_dir
     rm $file_name
     echo "finished downloading hugo version ${version}"
+    cd /workspace
+    ls
 done
 
 hugo
